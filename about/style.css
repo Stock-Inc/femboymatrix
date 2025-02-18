@@ -1,10 +1,18 @@
 html {
   h1 {
+    color: #ea96ad;
     font-family: Dustismo;
     text-align: center;
     font-size: 50px;
   }
+  h2 {
+    color: #ea96ad;
+    font-family: Dustismo;
+    text-align: center;
+    font-size: 40px;
+  }
   h3 {
+    color: #ea96ad;
     font-size: 25px;
     font-family: Dustismo;
     text-align: center;
@@ -34,7 +42,7 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 30%;
 }
 
 .aboutButton {
