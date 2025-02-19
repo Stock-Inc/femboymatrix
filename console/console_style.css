@@ -1,0 +1,18 @@
+html {
+  input[type=text] {
+    width: 40%;
+    padding: 7px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    font-family: Hack;
+    color: #ea96ad;
+    background-color: #121318;
+    border-radius: 28px;
+    border: 2px solid #ea96ad;
+    transition: width 0.4s ease-in-out;
+  }
+
+  input[type=text]:focus {
+    width: 90%;
+  }
+}

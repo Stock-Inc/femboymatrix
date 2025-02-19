@@ -3,11 +3,21 @@ html {
     font-family: Dustismo;
     text-align: center;
     font-size: 50px;
+    color: #ea96ad;
   }
   h3 {
     font-size: 25px;
     font-family: Dustismo;
     text-align: center;
+    color: #ea96ad;
+  }
+  h5 {
+    font-size: 18px;
+    font-family: Dustismo;
+    text-align: center;
+    color: #cd8497;
+    position: relative;
+    bottom: 3px;
   }
   height: 100%;
   width: 100%;
@@ -60,6 +70,16 @@ html {
   user-select: none;
   -webkit-user-select: none;
   width: auto;
+}
+
+.aboutButton:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.aboutButton:active {
+  background-color: #121318;
+  transform: scale(.96);
 }
 
 .pillButton {
