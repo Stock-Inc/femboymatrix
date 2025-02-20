@@ -1,3 +1,5 @@
+
+
 function shake(){
   var g = (Math.random() - 0.5) * 2;
   document.getElementById('command').style.transform = "rotate(" + g + "deg)";
@@ -6,4 +8,22 @@ function shake(){
   }, 500);
 }
 
-document.getElementById('command').addEventListener("keypress", shake)
+var command = document.getElementById('command');
+
+command.addEventListener("keypress", shake)
+
+async function sendCommand (url, command) {
+  let response = await fetch(url + new URLSearchParams({
+    command: command
+  }));
+  let data = await response.text();
+  return data;
+}
+
+command.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    sendCommand("https://api.femboymatrix.su/console?", command.value).then(function(data) {
+      console.log(data);
+    });
+  }
+})
