@@ -36,7 +36,7 @@ function outputLog(message){
 
 command.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
-    sendCommand("http://localhost:8080/console?", command.value).then(function(data) {
+    sendCommand("https://api.femboymatrix.su/console?", command.value).then(function(data) {
       outputLog(data);
 
     });
