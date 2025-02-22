@@ -4,7 +4,7 @@ html {
     padding: 7px 10px;
     margin: 4px 0;
     box-sizing: border-box;
-    font-family: Hack;
+    font-family: Hack, monospace;
     color: #ea96ad;
     background-color: #121318;
     border-radius: 28px;
@@ -12,7 +12,20 @@ html {
     transition: width 0.4s ease-in-out;
   }
 
+  table{
+    color: #ea96ad;
+    background-color: #121318;
+    border-radius: 28px;
+    border: 2px solid #ea96ad;
+    font-family: Hack, monospace;
+    padding: 16px;
+    width: 90%;
+    height: 50%;
+    margin-bottom: 10px;
+  }
+
   input[type=text]:focus {
     width: 90%;
   }
 }
+

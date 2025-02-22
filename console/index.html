@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <title>femboymatrix[console]</title>
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <style>
-      @font-face { font-family: Dustismo; src: url('../Dustismo.ttf');
+      @font-face { font-family: Dustismo; src: url('../Dustismo.ttf');}
     </style>
     <link href="../style.css" rel="stylesheet" type="text/css" />
     <link href="console_style.css" rel="stylesheet" type="text/css" />
@@ -19,19 +19,24 @@
       <canvas id='canv'></canvas>
     </div>
   </head>
+
   <body>
     <div class='container'>
-      <div class='row-container'>
-        <input type="text" id='command', name='commandline', placeholder='Enter command here...'>
+      <div class="centered" id="test">
+        <table id="outputLog" style="height:60vh; overflow: auto; display: block;"></table>
+      </div>
+      <div class='row-container' id="inputLine">
+        <input type="text" id='command' name='commandline' placeholder='Enter command here...'>
       </div>
     </div>
-    
   </body>
+
   <footer>
     <h5>
       Powered by Monster Energy&trade;
     </h5>
   </footer>
+
   <script src="../global_scripts/matrix.js"></script>
   <script src="script.js"></script>
 </html>

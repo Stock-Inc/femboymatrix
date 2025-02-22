@@ -28,6 +28,12 @@ html {
   z-index: 1;
 }
 
+.centered {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
 .row-container {
   display: flex;
   justify-content: space-around;
