@@ -1,146 +1,76 @@
-html {
-  h1 {
-    font-family: Dustismo;
-    text-align: center;
-    font-size: 50px;
+.pillButton {
+    background-color: #121318;
+    border: 3px solid #ea96ad;
+    border-radius: 28px;
+    box-sizing: border-box;
     color: #ea96ad;
-  }
-  h3 {
-    font-size: 25px;
+    cursor: pointer;
+    display: inline-block;
     font-family: Dustismo;
-    text-align: center;
-    color: #ea96ad;
-  }
-  h5 {
-    font-size: 18px;
-    font-family: Dustismo;
-    text-align: center;
-    color: #cd8497;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 13px 23px;
     position: relative;
-    bottom: 10px;
-  }
-  height: 100%;
-  width: 100%;
-}
-
-.container {
-  position: relative;
-  z-index: 1;
-}
-
-.centered {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.row-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-#canv {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
 }
 
 .aboutButton {
-  background-color: #121318;
-  border: 3px solid #ea96ad;
-  border-radius: 28px;
-  box-sizing: border-box;
-  color: #ea96ad;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Dustismo;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  padding: 13px 23px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
-  user-select: none;
-  -webkit-user-select: none;
-  width: auto;
+    background-color: #121318;
+    border: 3px solid #ea96ad;
+    border-radius: 28px;
+    box-sizing: border-box;
+    color: #ea96ad;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Dustismo;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 13px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
 }
 
 .aboutButton:focus-visible {
-  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-  transition: box-shadow .2s;
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
 }
 
 .aboutButton:active {
-  background-color: #121318;
-  transform: scale(.96);
-}
-
-.pillButton {
-  background-color: #121318;
-  border: 3px solid #ea96ad;
-  border-radius: 28px;
-  box-sizing: border-box;
-  color: #ea96ad;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Dustismo;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  padding: 13px 23px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
-  user-select: none;
-  -webkit-user-select: none;
-  width: auto;
+    background-color: #121318;
+    transform: scale(.96);
 }
 
 .pillButton:focus-visible {
-  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-  transition: box-shadow .2s;
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
 }
 
 .pillButton:active {
-  background-color: #121318;
-  transform: scale(.96);
-}
-
-.sticky-div {
-  /* background-color: #121318; */
-  position: sticky;
-  z-index: 3;
-  top: 0px;
-  padding: 0px 0px;
-}
-
-.sticky-canvas-div {
-  background-color: #121318;
-  position: sticky;
-  top: 0px;
-  padding: 10px 0px;
+    background-color: #121318;
+    transform: scale(.96);
 }
 
 .pillButton:disabled {
-  border-color: #ea96ad;
-  color: #121318;
-  cursor: not-allowed;
-  opacity: 1;
+    border-color: #ea96ad;
+    color: #121318;
+    cursor: not-allowed;
+    opacity: 1;
 }
