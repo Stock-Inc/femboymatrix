@@ -1,14 +1,14 @@
 
 
 function shake(){
-  var g = (Math.random() - 0.5) * 2;
+  let g = (Math.random() - 0.5) * 2;
   document.getElementById('command').style.transform = "rotate(" + g + "deg)";
   setTimeout(function(){
     document.getElementById('command').style.transform = "rotate(0deg)";
   }, 500);
 }
 
-var command = document.getElementById('command');
+const command = document.getElementById('command');
 
 command.addEventListener("keypress", shake)
 
@@ -20,9 +20,9 @@ async function sendCommand (url, command) {
 }
 
 function outputLog(message){
-  var table = document.getElementById("outputLog");
-  var newLine = document.createElement("tr");
-  var newOutput = document.createTextNode(message);
+  let table = document.getElementById("outputLog");
+  let newLine = document.createElement("tr");
+  let newOutput = document.createTextNode(message);
 
 
   newLine.appendChild(newOutput);
@@ -30,8 +30,10 @@ function outputLog(message){
 
   const inputLine = document.getElementById("inputLine");
 
+  command.value = '';
   table.insertRow(inputLine)
   table.scrollTop = table.scrollHeight;
+
 }
 
 command.addEventListener("keypress", function(event) {

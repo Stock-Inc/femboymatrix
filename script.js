@@ -1,4 +1,4 @@
-var audio = new Audio('assets/headshot.mp3');
+const audio = new Audio('assets/headshot.mp3');
 
 // TODO: Replace destination
 document.getElementById('pillButton').addEventListener("click", function() {

@@ -6,44 +6,42 @@
     <style>
       @font-face { font-family: Dustismo; src: url('../Dustismo.ttf'); }
     </style>
-      <div class='sticky-div'>
-        <div class="container">
-          <h1 style="background-color: #121318;">
-            <a href="/" style="color: #ea96ad; text-decoration:none;">About Us [ ]</a>
-          </h1>
-        </div>
-      </div>
-    <div class="sticky-canvas-div">
-      <canvas id='canv'></canvas>
-    </div>
-    
     <link href="../style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
   </head>
   
   <body>
-    <div class='container'>
+    <div class="sticky-canvas-div">
+      <canvas id='canv'></canvas>
+    </div>
+    <header class='sticky-div'>
+      <div class="container">
+        <h1 style="background-color: #121318;">
+          <a href="/" style="color: #ea96ad; text-decoration:none;">About Us [ ]</a>
+        </h1>
+      </div>
+    </header>
+    <main class='container'>
         <div>
           <img class='center' src='../assets/shadow.webp' alt="daddy">
           <h3>
             entity 1. Our daddy
           </h3>
         </div>
-
         <div>
           <img class='center' src='../assets/question_mark.jpg' alt="your dad">
           <h3>
             entity 404. Your dad
           </h3>
         </div>
-    </div>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    </main>
+    <footer>
+      <h5>
+        Powered by Monster Energy&trade;
+      </h5>
+    </footer>
     <script src="../global_scripts/matrix.js"></script>
   </body>
 
-  <footer>
-    <h5>
-      Powered by Monster Energy&trade;
-    </h5>
-  </footer>
 </html>

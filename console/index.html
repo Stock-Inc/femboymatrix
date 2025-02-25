@@ -6,17 +6,6 @@
     <style>
       @font-face { font-family: Dustismo; src: url('../Dustismo.ttf');}
     </style>
-
-    <div class='sticky-div'>
-      <div class="container">
-        <h1 style="background-color: #121318;">
-          <a href="/" style="color: #ea96ad; text-decoration:none;">Console [ ]</a>
-        </h1>
-      </div>
-    </div>
-    <div class="sticky-canvas-div">
-      <canvas id='canv'></canvas>
-    </div>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="../style.css" rel="stylesheet" type="text/css" />
@@ -24,21 +13,32 @@
   </head>
 
   <body>
-    <div class='container'>
+    <div class="sticky-canvas-div">
+      <canvas id='canv'></canvas>
+    </div>
+    <header class='sticky-div'>
+      <div class="container">
+        <h1 style="background-color: #121318;">
+          <a href="/" style="color: #ea96ad; text-decoration:none;">Console [ ]</a>
+        </h1>
+      </div>
+    </header>
+    <main class='container'>
       <div class="centered" id="test">
         <table id="outputLog" style="overflow: auto; display: block;"></table>
       </div>
       <div class='row-container' id="inputLine">
         <input type="text" id='command' name='commandline' placeholder='Enter command here...'>
       </div>
-    </div>
+    </main>
+    <footer>
+      <h5>
+        Powered by Monster Energy&trade;
+      </h5>
+    </footer>
   </body>
 
-  <footer>
-    <h5>
-      Powered by Monster Energy&trade;
-    </h5>
-  </footer>
+
 
   <script src="../global_scripts/matrix.js"></script>
   <script src="script.js"></script>
