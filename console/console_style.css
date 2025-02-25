@@ -5,11 +5,13 @@ html {
     margin: 4px 0;
     box-sizing: border-box;
     font-family: Hack, monospace;
+    font-size: 100%;
     color: #ea96ad;
     background-color: #121318;
     border-radius: 28px;
     border: 2px solid #ea96ad;
     transition: width 0.4s ease-in-out;
+    height: 5vh;
   }
 
   table{
@@ -20,12 +22,26 @@ html {
     font-family: Hack, monospace;
     padding: 16px;
     width: 90%;
-    height: 50%;
+    height: 50vh;
     margin-bottom: 10px;
   }
 
   input[type=text]:focus {
     width: 90%;
+  }
+
+  @media only screen and (min-width: 1080px) {
+    table{
+      color: #ea96ad;
+      background-color: #121318;
+      border-radius: 28px;
+      border: 2px solid #ea96ad;
+      font-family: Hack, monospace;
+      padding: 16px;
+      width: 90%;
+      height: 50vh;
+      margin-bottom: 10px;
+    }
   }
 }
 
