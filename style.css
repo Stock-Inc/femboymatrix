@@ -17,7 +17,7 @@
     text-align: center;
     text-decoration: none;
     touch-action: manipulation;
-    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s, filter 300ms;
     user-select: none;
     -webkit-user-select: none;
     width: auto;
@@ -42,10 +42,18 @@
     text-align: center;
     text-decoration: none;
     touch-action: manipulation;
-    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s, filter 300ms;
     user-select: none;
     -webkit-user-select: none;
     width: auto;
+}
+
+.aboutButton:hover {
+    filter: drop-shadow(0 0 1em rgba(234, 150, 173, 0.2));
+}
+
+.pillButton:hover {
+    filter: drop-shadow(0 0 1em rgba(234, 150, 173, 0.2));
 }
 
 .aboutButton:focus-visible {

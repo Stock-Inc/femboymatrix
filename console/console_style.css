@@ -28,6 +28,7 @@ html {
 
   input[type=text]:focus {
     width: 90%;
+    filter: drop-shadow(0 0 1em rgba(255, 255, 255, 0.2));
   }
 
   @media only screen and (min-width: 1080px) {
