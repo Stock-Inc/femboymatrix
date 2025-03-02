@@ -24,6 +24,7 @@ html {
     width: 90%;
     height: 50vh;
     margin-bottom: 10px;
+    white-space: pre-wrap;
   }
 
   input[type=text]:focus {
