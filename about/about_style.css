@@ -1,0 +1,22 @@
+.about-card {
+    margin: 20px;
+}
+
+.card-container {
+    z-index: 1;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 800px) {
+    .card-container {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-card img {
+        width: 100%;
+    }
+}
