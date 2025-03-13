@@ -1,5 +1,5 @@
 .pillButton {
-    background-color: #121318;
+    background-color: #21242c;
     border: 3px solid #ea96ad;
     border-radius: 28px;
     box-sizing: border-box;
@@ -24,7 +24,7 @@
 }
 
 .aboutButton {
-    background-color: #121318;
+    background-color: #21242c;
     border: 3px solid #ea96ad;
     border-radius: 28px;
     box-sizing: border-box;
@@ -81,4 +81,65 @@
     color: #121318;
     cursor: not-allowed;
     opacity: 1;
+}
+
+.card {
+    width: 90%;
+    height: 100%;
+    margin: 25px;
+    background-color: #181820;
+    border: 3px solid #ea96ad;
+    padding: 30px 50px;
+    border-radius: 15px;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-container img {
+    width: 30%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .card {
+        width: 60%;
+        height: 60%;
+        margin: 25px;
+        background-color: #181820;
+        border: 3px solid #ea96ad;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .card-container img {
+        width: 90%;
+    }
+
+    .pillButton {
+        width: 160px;
+        margin: 10px;
+    }
+
+    .aboutButton {
+        width: 160px;
+        margin: 10px;
+    }
+
+    .row-container {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+    }
 }
