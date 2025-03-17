@@ -18,12 +18,18 @@ html {
     color: #ea96ad;
   }
   h5 {
-    font-size: 18px;
+    font-size: 20px;
     font-family: Dustismo;
     text-align: center;
     color: #cd8497;
     position: relative;
     bottom: 10px;
+  }
+  p {
+    font-size: 18px;
+    font-family: Dustismo;
+    text-align: center;
+    color: #cd8497;
   }
   height: 100%;
   width: 100%;
@@ -73,3 +79,42 @@ html {
   padding: 10px 0px;
 }
 
+.default-button {
+  background-color: #21242c;
+  border: 3px solid #ea96ad;
+  border-radius: 28px;
+  box-sizing: border-box;
+  color: #ea96ad;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Dustismo;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s, filter 300ms;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.default-button:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 1em rgba(234, 150, 173, 0.2));
+}
+
+.default-button:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.default-button:active {
+  background-color: #121318;
+  transform: scale(.96);
+}
