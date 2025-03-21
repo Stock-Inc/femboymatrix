@@ -1,25 +1,21 @@
 html {
   h1 {
-    font-family: Dustismo;
     text-align: center;
     font-size: 50px;
     color: #ea96ad;
   }
   h2 {
-    font-family: Dustismo;
     text-align: center;
     font-size: 35px;
     color: #ea96ad;
   }
   h3 {
     font-size: 25px;
-    font-family: Dustismo;
     text-align: center;
     color: #ea96ad;
   }
   h5 {
     font-size: 20px;
-    font-family: Dustismo;
     text-align: center;
     color: #cd8497;
     position: relative;
@@ -27,12 +23,15 @@ html {
   }
   p {
     font-size: 18px;
-    font-family: Dustismo;
     text-align: center;
     color: #cd8497;
   }
   height: 100%;
   width: 100%;
+}
+
+body {
+  font-family: Dustismo, sans-serif;
 }
 
 .container {
@@ -68,15 +67,15 @@ html {
 .sticky-div {
   position: sticky;
   z-index: 3;
-  top: 0px;
-  padding: 0px 0px;
+  top: 0;
+  padding: 0;
 }
 
 .sticky-canvas-div {
   background-color: #121318;
   position: sticky;
-  top: 0px;
-  padding: 10px 0px;
+  top: 0;
+  padding: 10px 0;
 }
 
 .default-button {
@@ -87,7 +86,7 @@ html {
   color: #ea96ad;
   cursor: pointer;
   display: inline-block;
-  font-family: Dustismo;
+  font-family: Dustismo, sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 20px;
