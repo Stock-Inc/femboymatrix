@@ -1,18 +1,25 @@
+:root {
+  --femboy-pink: #ea96ad;
+  --femboy-dark-pink: #cd8497;
+  --background: #121318;
+  --element-background: #181820;
+}
+
 html {
   h1 {
     text-align: center;
     font-size: 50px;
-    color: #ea96ad;
+    color: var(--femboy-pink);
   }
   h2 {
     text-align: center;
     font-size: 35px;
-    color: #ea96ad;
+    color: var(--femboy-pink);
   }
   h3 {
     font-size: 25px;
     text-align: center;
-    color: #ea96ad;
+    color: var(--femboy-pink);
   }
   h5 {
     font-size: 20px;
@@ -72,7 +79,7 @@ body {
 }
 
 .sticky-canvas-div {
-  background-color: #121318;
+  background-color: var(--background);
   position: sticky;
   top: 0;
   padding: 10px 0;
@@ -80,10 +87,10 @@ body {
 
 .default-button {
   background-color: #21242c;
-  border: 3px solid #ea96ad;
+  border: 3px solid var(--femboy-pink);
   border-radius: 28px;
   box-sizing: border-box;
-  color: #ea96ad;
+  color: var(--femboy-pink);
   cursor: pointer;
   display: inline-block;
   font-family: Dustismo, sans-serif;
@@ -114,6 +121,6 @@ body {
 }
 
 .default-button:active {
-  background-color: #121318;
+  background-color: var(--background);
   transform: scale(.96);
 }

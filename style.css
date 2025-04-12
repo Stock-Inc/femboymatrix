@@ -1,11 +1,9 @@
-
-
 .card {
     width: 90%;
     height: 100%;
     margin: 25px;
-    background-color: #181820;
-    border: 3px solid #ea96ad;
+    background-color: var(--element-background);
+    border: 3px solid var(--femboy-pink);
     padding: 30px 50px;
     border-radius: 15px;
 }
@@ -26,8 +24,8 @@
         width: 60%;
         height: 60%;
         margin: 25px;
-        background-color: #181820;
-        border: 3px solid #ea96ad;
+        background-color: var(--element-background);
+        border: 3px solid var(--femboy-pink);
         border-radius: 15px;
         display: flex;
         flex-direction: column;

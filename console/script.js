@@ -1,5 +1,3 @@
-
-
 function shake(){
   let g = (Math.random() - 0.5) * 2;
   document.getElementById('command').style.transform = "rotate(" + g + "deg)";
@@ -24,7 +22,6 @@ function outputLog(message){
   let newLine = document.createElement("tr");
   let newOutput = document.createTextNode(message);
 
-
   newLine.appendChild(newOutput);
   table.appendChild(newLine);
 
@@ -33,14 +30,12 @@ function outputLog(message){
   command.value = '';
   table.insertRow(inputLine)
   table.scrollTop = table.scrollHeight;
-
 }
 
 command.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
     sendCommand("https://api.femboymatrix.su/console?", command.value).then(function(data) {
       outputLog(data);
-
     });
   }
 })
